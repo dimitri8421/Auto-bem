@@ -91,13 +91,13 @@ body {
     background-color: var(--clr-neutral-low);
     width: 90%;
     margin: 0 auto;
-    box-shadow: 0 var(--spacing-quarck) var(--spacing-nano) 0 rgba(87, 106, 247, .1);
+    box-shadow: 0 var(--spacing-quarck) var(--spacing-nano) 0
+        rgba(87, 106, 247, 0.1);
     padding-inline: var(--spacing-xxxs);
     border-radius: 0 0 var(--spacing-xxxs) var(--spacing-xxxs);
 }
 .style_details__8lnQQ {
-    display: flex
-;
+    display: flex;
     gap: var(--spacing-nano);
     padding-top: var(--spacing-nano);
     padding-bottom: var(--spacing-quarck);
@@ -106,8 +106,7 @@ body {
     list-style: none;
 }
 .style_details__8lnQQ li {
-    display: flex
-;
+    display: flex;
     gap: var(--spacing-quarck);
     align-items: center;
 }
@@ -131,6 +130,65 @@ body {
 .text-bold {
     font-family: poppins-bold;
 }
-p,h1,h2,h3,h4,h5,span {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
     color: #2b2b2b;
 }
+
+/* loading */
+/* From Uiverse.io by aadium */
+.loader {
+    overflow: hidden;
+    position: relative;
+}
+
+.wheel {
+    fill: rgb(128, 128, 128);
+    font-size: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 6em;
+    text-align: center;
+    animation: rolling 1s linear infinite;
+}
+
+#rim {
+    fill: rgb(255, 255, 255);
+}
+
+#tire {
+    fill: rgb(55, 55, 55);
+}
+
+.road {
+    position: absolute;
+    margin-top: -4px;
+    width: 100%;
+    height: 10px;
+    border-radius: 5em;
+    background-color: rgb(55, 55, 55);
+    animation: road-move 2s linear infinite;
+}
+
+@keyframes rolling {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes road-move {
+    from {
+        transform: translateX(-140%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* loading */

@@ -2259,6 +2259,14 @@ input:checked + .toggle-bg {
   .xl\:h-96 {
     height: 24rem;
   }
+
+  .xl\:w-40 {
+    width: 10rem;
+  }
+
+  .xl\:w-44 {
+    width: 11rem;
+  }
 }
 
 .rtl\:rotate-180:where([dir="rtl"], [dir="rtl"] *) {
